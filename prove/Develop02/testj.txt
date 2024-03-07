@@ -1,0 +1,1 @@
+[{"_prompt":"Write about a blessing you received today and how it strengthened your testimony.","_date":"2024-03-07T07:46:31.31549-07:00","_entryText":"blessed"},{"_prompt":"How did you make time for personal prayer and scripture study today?","_date":"2024-03-07T07:46:48.985987-07:00","_entryText":"test"}]
