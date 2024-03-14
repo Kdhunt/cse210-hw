@@ -3,19 +3,14 @@ using System.Data;
 class Scripture
 {
     private readonly List<ScriptureWord> _words = new List<ScriptureWord>();
-    private String _book {get; set;}
-    private string _chapter  {get; set;}
-    private string _verse  {get; set;}
+    private ScriptureReference _reference;
     private  string _text { get; set; }
 
-    public void Initialize(string book, string chapter, string verse, string text, string reference)
+    public void Initialize(string text, string reference)
     {
-        this._book = book;
-        this._chapter = chapter;
-        this._verse = verse;
-
-        this._text = text;
-
+  
+          this._text = text;
+        _reference = new ScriptureReference(reference);
         // Split text into words
         string[] wordArray = text.Split(new char[] { ' ', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
@@ -50,7 +45,7 @@ class Scripture
 
     public void Display()
     {
-        Console.WriteLine($"Scripture Reference: {this._book} {this._chapter}:{this._verse} ");
+        Console.WriteLine(_reference.getDisplayText());
         Console.WriteLine();
 
         foreach (ScriptureWord word in this._words)
