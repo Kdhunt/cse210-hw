@@ -1,0 +1,9 @@
+Score: 572
+SimpleGoal,sdfg (dfg)
+SimpleGoal:sdfg,dfg,12,True
+EternalGoal,sdfh (dsfh)
+EternalGoal:sdfh,dsfh,43
+ChecklistGoal,sgh (sgh)
+ChecklistGoal:sgh,sgh,12,2,2,321
+SimpleGoal,sdh (sdh)
+SimpleGoal:sdh,sdh,43,True

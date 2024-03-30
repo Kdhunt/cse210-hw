@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        GoalManager goalManager = new GoalManager();
+        goalManager.Start();
+
+//creative: add a save on exit so you can pull up goals later
+//I was actually able to do that one
     }
 }
